@@ -112,6 +112,7 @@ body {
 .quote__box img {
   width: 400px;
   height: 500px;
+  opacity: 0.9;
 }
 .quote__box button {
   position: absolute;
@@ -131,4 +132,52 @@ body {
 #next {
   right: 600px;
   top: 300px;
+}
+
+#todoForm {
+  display: flex;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+#todoInput {
+  border: none;
+  background-color: rgba(154, 153, 153, 0.3);
+  width: 400px;
+  height: 50px;
+  border-radius: 20px;
+}
+#todoInput::placeholder {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+#todoInput:focus {
+  background-color: rgba(154, 153, 153, 0.7);
+}
+#todoList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+  position: absolute;
+  right: 250px;
+  top: 160px;
+}
+#todoList li {
+  padding: 10px 0;
+}
+
+#todoList li span {
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+  margin-right: 30px;
+}
+#todoList li button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
