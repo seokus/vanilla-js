@@ -121,12 +121,12 @@ body {
   cursor: pointer;
 }
 #previous {
-  left: 150px;
+  left: 100px;
   top: 200px;
 }
 
 #next {
-  right: 150px;
+  right: 100px;
   top: 200px;
 }
 
