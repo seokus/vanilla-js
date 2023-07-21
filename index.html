@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="greetingForm">
+      <input
+        id="greetingInput"
+        type="text"
+        required
+        placeholder="Write your name!!"
+      />
+      <button type="submit" id="greetingBtn">Login</button>
+    </form>
+    <div id="greetingDisplayBox" style="display: none">
+      <h1 id="greetingDisplay"></h1>
+      <button id="greetingLogout">Logout</button>
+    </div>
+    <div class="clock">
+      <span id="clockNum"></span>
+    </div>
+
+    <script src="greeting.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
