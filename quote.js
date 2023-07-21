@@ -5,6 +5,18 @@ const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
 let i = 0;
 
+const images = [
+  "img/img1.jpg",
+  "img/img2.jpg",
+  "img/img3.jpg",
+  "img/img4.jpg",
+  "img/img5.jpg",
+  "img/img6.jpg",
+  "img/img7.jpg",
+  "img/img8.jpg",
+  "img/img9.jpg",
+];
+
 const quotes = [
   {
     quote:
@@ -45,6 +57,9 @@ const quotes = [
   },
 ];
 
+const chosenImg = images[i];
+quoteImg.src = chosenImg;
+
 const chosenQuote = quotes[i];
 quote.innerText = chosenQuote.quote;
 author.innerText = chosenQuote.author;
@@ -59,7 +74,8 @@ function preQuote() {
   const chosenQuote = quotes[i];
   quote.innerText = chosenQuote.quote;
   author.innerText = chosenQuote.author;
-  console.log(i);
+  const chosenImg = images[i];
+  quoteImg.src = chosenImg;
 }
 
 next.addEventListener("click", nextQuote);
@@ -72,5 +88,6 @@ function nextQuote() {
   const chosenQuote = quotes[i];
   quote.innerText = chosenQuote.quote;
   author.innerText = chosenQuote.author;
-  console.log(i);
+  const chosenImg = images[i];
+  quoteImg.src = chosenImg;
 }

@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="greetingForm">
-      <input
-        id="greetingInput"
-        type="text"
-        required
-        placeholder="Write your name!!"
-      />
-      <button type="submit" id="greetingBtn">Login</button>
-    </form>
-    <div id="greetingDisplayBox" style="display: none">
-      <h1 id="greetingDisplay"></h1>
-      <button id="greetingLogout">Logout</button>
+    <div class="greeting__box">
+      <form class="greeting__form" id="greetingForm">
+        <input
+          class="greeting__input"
+          id="greetingInput"
+          type="text"
+          required
+          placeholder="Write your name!!"
+        />
+        <button class="greeting-login" type="submit" id="greetingBtn">
+          Login
+        </button>
+      </form>
+      <div id="greetingDisplayBox" style="display: none">
+        <h1 class="greeting__title" id="greetingDisplay"></h1>
+        <button id="greetingLogout">Logout</button>
+      </div>
     </div>
     <div class="clock">
       <span id="clockNum"></span>
@@ -30,9 +35,19 @@
       <button id="previous"><</button>
       <button id="next">></button>
     </div>
+    <form action="#" id="todoForm">
+      <input
+        type="text"
+        id="todoInput"
+        required
+        placeholder="Write To Do List!!"
+      />
+    </form>
+    <ul id="todoList"></ul>
 
     <script src="greeting.js"></script>
     <script src="clock.js"></script>
     <script src="quote.js"></script>
+    <script src="todo.js"></script>
   </body>
 </html>
